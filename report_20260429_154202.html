@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RakipRadar &mdash; Kıyafet Sektörü 2026-04-29 15:42:02</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f5f0eb;color:#2d3436;line-height:1.5}
+.wrap{max-width:1380px;margin:0 auto;padding:24px}
+header{background:linear-gradient(135deg,#1a1a2e 0%,#2d1b69 50%,#c0392b 100%);
+       color:#fff;padding:28px 32px;border-radius:12px;margin-bottom:24px}
+header h1{font-size:1.7em;letter-spacing:.5px}
+header p{opacity:.7;margin-top:6px;font-size:.88em}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:24px}
+.card{background:#fff;border-radius:10px;padding:18px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card-val{font-size:2.2em;font-weight:700;line-height:1}
+.card-lbl{color:#888;font-size:.8em;margin-top:5px}
+.red{color:#c0392b}.orange{color:#e67e22}.green{color:#27ae60}.blue{color:#2980b9}.purple{color:#8e44ad}
+.sec{background:#fff;border-radius:10px;padding:20px;margin-bottom:22px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.sec h2{font-size:1.02em;color:#2c3e50;border-bottom:2px solid #f0ece8;padding-bottom:9px;margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:.86em}
+th{background:#2d1b69;color:#fff;padding:9px 12px;text-align:left;font-weight:600}
+th:first-child{border-radius:6px 0 0 0}th:last-child{border-radius:0 6px 0 0}
+td{padding:8px 12px;border-bottom:1px solid #f4f0ec;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#faf8f5}
+.alert-row td{background:#fff5f5}
+.alert-row:hover td{background:#ffecec}
+code{background:#f0ece8;padding:1px 5px;border-radius:4px;font-size:.8em}
+a{color:#2980b9;text-decoration:none}a:hover{text-decoration:underline}
+.empty{color:#bbb;text-align:center;padding:24px;font-style:italic}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:.76em;font-weight:700}
+.b-danger{background:#ffe0e0;color:#c0392b}
+.store-tag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:.73em;font-weight:700;white-space:nowrap}
+.t-koton{background:#fff0e0;color:#c0511b}
+.t-lcw{background:#e0f0ff;color:#1565c0}
+.t-zara{background:#f5f5f5;color:#333}
+.t-bershka{background:#ffe0f0;color:#ad1457}
+.t-md{background:#e8f0fe;color:#1a237e}
+.t-defacto{background:#e0fff0;color:#1b5e20}
+.t-sim{background:#fff3cd;color:#856404;font-size:.7em}
+footer{text-align:center;color:#aaa;font-size:.76em;margin-top:22px}
+.sim-notice{background:#fff3cd;border-left:4px solid #ffc107;padding:10px 14px;
+            border-radius:0 6px 6px 0;margin-bottom:20px;font-size:.85em;color:#856404}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>&#128248; RakipRadar &mdash; Kıyafet Sektörü Fiyat Raporu</h1>
+    <p>
+      Oluşturulma: 2026-04-29 15:42:02
+      &nbsp;|&nbsp;
+      
+        Koton TR &bull; 
+      
+        LC Waikiki TR [sim] &bull; 
+      
+        Zara TR [sim] &bull; 
+      
+        Bershka TR [sim] &bull; 
+      
+        Massimo Dutti TR [sim] &bull; 
+      
+        DeFacto TR [sim]
+      
+    </p>
+  </header>
+
+  <div class="sim-notice">
+    &#9432; <strong>LC Waikiki, Zara, Bershka, Massimo Dutti, DeFacto</strong> siteleri Akamai Bot Manager
+    koruması nedeniyle <code>requests</code> ile eriÅŸilemiyor.
+    Bu markalar için fiyatlar gerçek fiyat segmentine göre modellenen simülasyon verisinden gelmektedir;
+    ürün linkleri orijinal siteye yönlendirir.
+    Gerçek veri için Playwright/Selenium entegrasyonu gereklidir.
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="card-val blue">84</div><div class="card-lbl">Toplam SKU</div></div>
+    <div class="card"><div class="card-val red">84</div><div class="card-lbl">Toplam Alert</div></div>
+    <div class="card"><div class="card-val orange">84</div><div class="card-lbl">Son 7 Gün Alert</div></div>
+    <div class="card"><div class="card-val purple">6</div><div class="card-lbl">İzlenen Marka</div></div>
+    <div class="card"><div class="card-val green">10.0%</div><div class="card-lbl">Alert Eşiği</div></div>
+  </div>
+
+  <div class="sec">
+    <h2>&#9888;&#65039; Fiyat Düşüş Alertları (&ge;10.0%)</h2>
+    
+    <table>
+      <thead><tr>
+        <th>Ürün Adı</th><th>SKU</th><th>Kategori</th><th>Marka</th>
+        <th>Eski Fiyat (₺)</th><th>Yeni Fiyat (₺)</th><th>Değişim</th><th>Tarih</th>
+      </tr></thead>
+      <tbody>
+        
+        <tr class="alert-row">
+          <td>Dökümlü Midi Elbise</td>
+          <td><code>DF-A9631AX24SP</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>700.66</td>
+          <td>593.78</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Oversize Blazer</td>
+          <td><code>DF-V8428AZ23AU</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>893.70</td>
+          <td>757.37</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Gömlek</td>
+          <td><code>DF-A1614AX24SP</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>333.76</td>
+          <td>282.85</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Fitilli Kadife Elbise</td>
+          <td><code>DF-A7590AX24SP</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>675.42</td>
+          <td>572.39</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Geniş Paça Yüksek Bel Pantolon</td>
+          <td><code>DF-B0716AX24AU</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>717.33</td>
+          <td>607.91</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Crop Triko Kazak</td>
+          <td><code>DF-V5388AZ23AU</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>425.30</td>
+          <td>360.42</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Bağcıklı Jogger Eşofman Altı</td>
+          <td><code>DF-A3802AX24SP</code></td>
+          <td>Kadın Eşofman</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>347.69</td>
+          <td>294.65</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Çiçek Baskılı Viskon Bluz</td>
+          <td><code>DF-A6316AX24SP</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>422.46</td>
+          <td>358.02</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Basic Pamuk Tişört</td>
+          <td><code>DF-A0618AX24SP</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>290.28</td>
+          <td>246.00</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td><code>DF-B2030AX24AU</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>625.51</td>
+          <td>530.09</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Oversize Kapüşonlu Sweatshirt</td>
+          <td><code>DF-V6682AZ23AU</code></td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>624.44</td>
+          <td>529.19</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Regular Fit Jean Pantolon</td>
+          <td><code>DF-B5980AX23AU</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>367.37</td>
+          <td>311.33</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>İpek Karışımlı Bluz</td>
+          <td><code>MD-5589510</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2089.74</td>
+          <td>1770.97</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yün Karışımlı Overcoat</td>
+          <td><code>MD-5532510</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>5615.64</td>
+          <td>4759.02</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td><code>MD-5575810</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2138.86</td>
+          <td>1812.59</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>V Yaka Midi Elbise</td>
+          <td><code>MD-5593410</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2808.25</td>
+          <td>2379.87</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yapısal Omuzlu Blazer</td>
+          <td><code>MD-5512310</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>3659.44</td>
+          <td>3101.22</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Merino Yün Kazak</td>
+          <td><code>MD-5529710</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2621.19</td>
+          <td>2221.35</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Baskılı İpek Bluz</td>
+          <td><code>MD-5567210</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2677.82</td>
+          <td>2269.34</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Straight Leg Pantolon</td>
+          <td><code>MD-5551410</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1817.16</td>
+          <td>1539.97</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Saten Midi Etek</td>
+          <td><code>MD-5589310</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2102.06</td>
+          <td>1781.41</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Ekose Uzun Palto</td>
+          <td><code>MD-5583010</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>7808.32</td>
+          <td>6617.22</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Karışımlı Gömlek</td>
+          <td><code>MD-5574110</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1544.07</td>
+          <td>1308.53</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Bel Kemerli Trençkot</td>
+          <td><code>MD-5531210</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>5160.64</td>
+          <td>4373.42</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Oversize Baskılı Tişört</td>
+          <td><code>BSK-05013630</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>443.54</td>
+          <td>375.88</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yüksek Bel Cargo Pantolon</td>
+          <td><code>BSK-05088683</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>518.54</td>
+          <td>439.44</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Dökümlü Saten Bluz</td>
+          <td><code>BSK-09106780</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>557.37</td>
+          <td>472.35</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Slim Fit Boru Paça Pantolon</td>
+          <td><code>BSK-05040530</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>686.52</td>
+          <td>581.80</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Fırfırlı Midi Elbise</td>
+          <td><code>BSK-09108289</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>643.83</td>
+          <td>545.62</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Crop Blazer</td>
+          <td><code>BSK-05234830</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>772.90</td>
+          <td>655.00</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Çiçekli Mini Elbise</td>
+          <td><code>BSK-09105880</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>777.38</td>
+          <td>658.80</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Mom Jeans</td>
+          <td><code>BSK-05085989</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>549.74</td>
+          <td>465.88</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Kayık Yaka Crop Kazak</td>
+          <td><code>BSK-09103083</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>446.59</td>
+          <td>378.47</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yazlık Maxi Etek</td>
+          <td><code>BSK-09038589</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>756.60</td>
+          <td>641.19</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Karışımlı Gömlek</td>
+          <td><code>BSK-09108189</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>493.65</td>
+          <td>418.35</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Vatkalı Bomber Ceket</td>
+          <td><code>BSK-09023389</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>802.16</td>
+          <td>679.80</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Bel Detaylı Maxi Elbise</td>
+          <td><code>ZR-6731328</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1227.09</td>
+          <td>1039.91</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Trençkot Kısa Ceket</td>
+          <td><code>ZR-9035228</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2226.33</td>
+          <td>1886.72</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Nervür Detaylı Tayt</td>
+          <td><code>ZR-3821128</code></td>
+          <td>Kadın Taytlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>386.05</td>
+          <td>327.16</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Vatkalı İspanyol Kesim Bluz</td>
+          <td><code>ZR-6006298</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>972.13</td>
+          <td>823.84</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yüksek Bel Dökümlü Pantolon</td>
+          <td><code>ZR-3039228</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>908.34</td>
+          <td>769.78</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Karışımlı Oversize Gömlek</td>
+          <td><code>ZR-8073040</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>647.15</td>
+          <td>548.43</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Midi Dökümlü Elbise</td>
+          <td><code>ZR-1029940</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1340.04</td>
+          <td>1135.63</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Soft Touch Cropped Triko</td>
+          <td><code>ZR-7756028</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>690.91</td>
+          <td>585.52</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Geniş Paça Denim Pantolon</td>
+          <td><code>ZR-5030040</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>821.72</td>
+          <td>696.37</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Bağlama Detaylı Mini Etek</td>
+          <td><code>ZR-6038428</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>741.96</td>
+          <td>628.78</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yapısal Blazer Ceket</td>
+          <td><code>ZR-2006110</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1623.70</td>
+          <td>1376.02</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Ribanalı Crop Tişört</td>
+          <td><code>ZR-4512628</code></td>
+          <td>Kadın Üstler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>352.03</td>
+          <td>298.33</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Basic Pamuk Tişört</td>
+          <td><code>LCW-S42025</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>175.68</td>
+          <td>148.88</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td><code>LCW-S43112</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>351.49</td>
+          <td>297.87</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Oversize Kapüşonlu Sweatshirt</td>
+          <td><code>LCW-S41987</code></td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>312.77</td>
+          <td>265.06</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Çiçekli Yazlık Elbise</td>
+          <td><code>LCW-S44023</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>364.99</td>
+          <td>309.31</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Regular Fit Jean Pantolon</td>
+          <td><code>LCW-S42876</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>323.38</td>
+          <td>274.05</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Gömlek</td>
+          <td><code>LCW-S43654</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>234.18</td>
+          <td>198.46</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Bel Lastikli Etek</td>
+          <td><code>LCW-S41345</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>172.74</td>
+          <td>146.39</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Patlı Uzun Hırka</td>
+          <td><code>LCW-S44512</code></td>
+          <td>Kadın Hırkalar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>532.56</td>
+          <td>451.32</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Vatkalı Blazer Ceket</td>
+          <td><code>LCW-S42134</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>586.04</td>
+          <td>496.64</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Fitilli Kadife Pantolon</td>
+          <td><code>LCW-S43789</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>265.84</td>
+          <td>225.29</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Crop Ribana Tişört</td>
+          <td><code>LCW-S41098</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>120.65</td>
+          <td>102.25</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Oversize Denim Ceket</td>
+          <td><code>LCW-S44267</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>696.61</td>
+          <td>590.35</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Cepli Pileli Floral Dokulu Nakış Detaylı Brodeli Midi Etek</td>
+          <td><code>8684847581582</code></td>
+          <td>Kadın Etek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2359.99</td>
+          <td>1999.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Viskon Kupro Kumaş Bol Kesim Düz Bol Paça Pantolon</td>
+          <td><code>8684846162942</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Karışımlı V Yaka Düğmeli Crop Yelek</td>
+          <td><code>8684847152904</code></td>
+          <td>Vests</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1415.99</td>
+          <td>1199.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Viskon Karışımlı Kolsuz Bağlama Detaylı Dokulu Halter Yaka Bluz</td>
+          <td><code>8684847196755</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1061.99</td>
+          <td>899.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Viskon Kumaş Cepli Beli Lastikli Düz Bol Paça Pantolon</td>
+          <td><code>8684847189894</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</td>
+          <td><code>8684847277249</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Düğmeli Kolsuz Gömlek</td>
+          <td><code>8684847281376</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>943.99</td>
+          <td>799.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Normal Bel Cep Detaylı Pileli Geniş Paça Pantolon</td>
+          <td><code>8684847276785</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1769.99</td>
+          <td>1499.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Yuvarlak Dökümlü Yaka Kolsuz Çiçek Aksesuarlı Bluz</td>
+          <td><code>8684847280621</code></td>
+          <td>Blouse Ss</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1415.99</td>
+          <td>1199.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Modal Karışımlı Beli Lastikli Geniş Paça Pantolon</td>
+          <td><code>8684847384756</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1769.99</td>
+          <td>1499.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Kısa Kollu Klasik Yaka Cepli Modal Kumaş Çizgili Gömlek</td>
+          <td><code>8684847386460</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1415.99</td>
+          <td>1199.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Yuvarlak Yaka Yanları Bağlamalı Fiyonklu Kolsuz Müslin Bluz</td>
+          <td><code>8684847428825</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1179.99</td>
+          <td>999.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Geniş Uzun Kollu Düğmeli Müslin Gömlek</td>
+          <td><code>8684847434970</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Düğmeli Kolsuz Gömlek</td>
+          <td><code>8684847281505</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>943.99</td>
+          <td>799.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</td>
+          <td><code>8684847277379</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Viskon Karışımlı Kolsuz Bağlama Detaylı Dokulu Halter Yaka Bluz</td>
+          <td><code>8684847196687</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>943.99</td>
+          <td>799.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Viskon Kumaş Cepli Beli Lastikli Düz Bol Paça Pantolon</td>
+          <td><code>8684847189764</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</td>
+          <td><code>8684847722657</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Keten Görünümlü Düğmeli Kolsuz Gömlek</td>
+          <td><code>8684847659939</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>943.99</td>
+          <td>799.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Mandarin Yaka Cepli 3/4 Kol Modal Karışımlı Beli Bağlamalı Kimono</td>
+          <td><code>8684847153710</code></td>
+          <td>Kimonos</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1887.99</td>
+          <td>1599.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Modal Karışımlı Loose Fit Kloş Midi Etek</td>
+          <td><code>8684846169781</code></td>
+          <td>Kadın Etek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1533.99</td>
+          <td>1299.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Cepli Yüksek Bel Düz Geniş Paça Brodeli Pantolon</td>
+          <td><code>8684847020890</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2359.99</td>
+          <td>1999.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Uzun Kollu Kruvaze Bağlama Detaylı Brodeli Kimono Ceket</td>
+          <td><code>8684847578124</code></td>
+          <td>Kimonos</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2005.99</td>
+          <td>1699.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr class="alert-row">
+          <td>Pamuklu Kısa Kollu Dantel Detaylı Brodeli Çiçekli Gömlek</td>
+          <td><code>8684847579299</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1769.99</td>
+          <td>1499.99</td>
+          <td><span class="badge b-danger">-15.3%</span></td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  <div class="sec">
+    <h2>&#128248; Tüm İzlenen Ürünler</h2>
+    
+    <table>
+      <thead><tr>
+        <th>Ürün Adı</th><th>SKU</th><th>Kategori</th><th>Marka</th>
+        <th>Güncel Fiyat (₺)</th><th>Son Güncelleme</th>
+      </tr></thead>
+      <tbody>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/basic-pamuk-tisort-kadin-s42025" target="_blank" rel="noopener">Basic Pamuk Tişört</a></td>
+          <td><code>LCW-S42025</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>148.88</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/basic-pamuk-tisort-kadin-a0618ax24sp" target="_blank" rel="noopener">Basic Pamuk Tişört</a></td>
+          <td><code>DF-A0618AX24SP</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>246.00</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/baskili-ipek-bluz-p05567210.html" target="_blank" rel="noopener">Baskılı İpek Bluz</a></td>
+          <td><code>MD-5567210</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>2269.34</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/bagcikli-jogger-esofman-alti-a3802ax24sp" target="_blank" rel="noopener">Bağcıklı Jogger Eşofman Altı</a></td>
+          <td><code>DF-A3802AX24SP</code></td>
+          <td>Kadın Eşofman</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>294.65</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/baglama-detayli-mini-etek-p06038428.html" target="_blank" rel="noopener">Bağlama Detaylı Mini Etek</a></td>
+          <td><code>ZR-6038428</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>628.78</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/bel-detayli-maxi-elbise-p06731328.html" target="_blank" rel="noopener">Bel Detaylı Maxi Elbise</a></td>
+          <td><code>ZR-6731328</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1039.91</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/bel-kemerli-trencot-p05531210.html" target="_blank" rel="noopener">Bel Kemerli Trençkot</a></td>
+          <td><code>MD-5531210</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>4373.42</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/bel-lastikli-etek-kadin-s41345" target="_blank" rel="noopener">Bel Lastikli Etek</a></td>
+          <td><code>LCW-S41345</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>146.39</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/crop-blazer-p05234830.html" target="_blank" rel="noopener">Crop Blazer</a></td>
+          <td><code>BSK-05234830</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>655.00</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/crop-ribana-tisort-kadin-s41098" target="_blank" rel="noopener">Crop Ribana Tişört</a></td>
+          <td><code>LCW-S41098</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>102.25</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/crop-triko-kazak-v5388az23au" target="_blank" rel="noopener">Crop Triko Kazak</a></td>
+          <td><code>DF-V5388AZ23AU</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>360.42</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/dokumlu-midi-elbise-a9631ax24sp" target="_blank" rel="noopener">Dökümlü Midi Elbise</a></td>
+          <td><code>DF-A9631AX24SP</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>593.78</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/dokumlu-saten-bluz-p09106780.html" target="_blank" rel="noopener">Dökümlü Saten Bluz</a></td>
+          <td><code>BSK-09106780</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>472.35</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/ekose-uzun-palto-p05583010.html" target="_blank" rel="noopener">Ekose Uzun Palto</a></td>
+          <td><code>MD-5583010</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>6617.22</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/fitilli-kadife-elbise-a7590ax24sp" target="_blank" rel="noopener">Fitilli Kadife Elbise</a></td>
+          <td><code>DF-A7590AX24SP</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>572.39</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/fitilli-kadife-pantolon-kadin-s43789" target="_blank" rel="noopener">Fitilli Kadife Pantolon</a></td>
+          <td><code>LCW-S43789</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>225.29</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/firfirli-midi-elbise-p09108289.html" target="_blank" rel="noopener">Fırfırlı Midi Elbise</a></td>
+          <td><code>BSK-09108289</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>545.62</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/genis-paca-denim-pantolon-p05030040.html" target="_blank" rel="noopener">Geniş Paça Denim Pantolon</a></td>
+          <td><code>ZR-5030040</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>696.37</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/genis-paca-yuksek-bel-pantolon-b0716ax24au" target="_blank" rel="noopener">Geniş Paça Yüksek Bel Pantolon</a></td>
+          <td><code>DF-B0716AX24AU</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>607.91</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/kayik-yaka-crop-kazak-p09103083.html" target="_blank" rel="noopener">Kayık Yaka Crop Kazak</a></td>
+          <td><code>BSK-09103083</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>378.47</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-beli-bagcikli-cepli-havuc-pantolon-haki-4111728/" target="_blank" rel="noopener">Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</a></td>
+          <td><code>8684847277379</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-beli-bagcikli-cepli-havuc-pantolon-ekru-4121402/" target="_blank" rel="noopener">Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</a></td>
+          <td><code>8684847722657</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-beli-bagcikli-cepli-havuc-pantolon-kahve-4111727-1/" target="_blank" rel="noopener">Keten Görünümlü Beli Bağcıklı Cepli Havuç Pantolon</a></td>
+          <td><code>8684847277249</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-dugmeli-kolsuz-gomlek-haki-4111734/" target="_blank" rel="noopener">Keten Görünümlü Düğmeli Kolsuz Gömlek</a></td>
+          <td><code>8684847281505</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>799.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-dugmeli-kolsuz-gomlek-ekru-4120495/" target="_blank" rel="noopener">Keten Görünümlü Düğmeli Kolsuz Gömlek</a></td>
+          <td><code>8684847659939</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>799.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-gorunumlu-dugmeli-kolsuz-gomlek-kahve-4111733-1/" target="_blank" rel="noopener">Keten Görünümlü Düğmeli Kolsuz Gömlek</a></td>
+          <td><code>8684847281376</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>799.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/keten-gorunumlu-gomlek-kadin-s43654" target="_blank" rel="noopener">Keten Görünümlü Gömlek</a></td>
+          <td><code>LCW-S43654</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>198.46</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/keten-gorunumlu-gomlek-a1614ax24sp" target="_blank" rel="noopener">Keten Görünümlü Gömlek</a></td>
+          <td><code>DF-A1614AX24SP</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>282.85</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/keten-karisimli-gomlek-p09108189.html" target="_blank" rel="noopener">Keten Karışımlı Gömlek</a></td>
+          <td><code>BSK-09108189</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>418.35</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/keten-karisimli-gomlek-p05574110.html" target="_blank" rel="noopener">Keten Karışımlı Gömlek</a></td>
+          <td><code>MD-5574110</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1308.53</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/keten-karisimli-oversize-gomlek-p08073040.html" target="_blank" rel="noopener">Keten Karışımlı Oversize Gömlek</a></td>
+          <td><code>ZR-8073040</code></td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>548.43</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/keten-karisimli-v-yaka-dugmeli-crop-yelek-ekru-4110319-3/" target="_blank" rel="noopener">Keten Karışımlı V Yaka Düğmeli Crop Yelek</a></td>
+          <td><code>8684847152904</code></td>
+          <td>Vests</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1199.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/kisa-kollu-klasik-yaka-cepli-modal-kumas-cizgili-gomlek-antrasit-cizgili-4114489/" target="_blank" rel="noopener">Kısa Kollu Klasik Yaka Cepli Modal Kumaş Çizgili Gömlek</a></td>
+          <td><code>8684847386460</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1199.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/mandarin-yaka-cepli-3-4-kol-modal-karisimli-beli-baglamali-kimono-vizon-4091280/" target="_blank" rel="noopener">Mandarin Yaka Cepli 3/4 Kol Modal Karışımlı Beli Bağlamalı Kimono</a></td>
+          <td><code>8684847153710</code></td>
+          <td>Kimonos</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1599.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/merino-yun-kazak-p05529710.html" target="_blank" rel="noopener">Merino Yün Kazak</a></td>
+          <td><code>MD-5529710</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>2221.35</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/midi-dokumlu-elbise-p01029940.html" target="_blank" rel="noopener">Midi Dökümlü Elbise</a></td>
+          <td><code>ZR-1029940</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1135.63</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/modal-karisimli-beli-lastikli-genis-paca-pantolon-antrasit-cizgili-4114486-2/" target="_blank" rel="noopener">Modal Karışımlı Beli Lastikli Geniş Paça Pantolon</a></td>
+          <td><code>8684847384756</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1499.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/modal-karisimli-loose-fit-klos-midi-etek-vizon-4091281-1/" target="_blank" rel="noopener">Modal Karışımlı Loose Fit Kloş Midi Etek</a></td>
+          <td><code>8684846169781</code></td>
+          <td>Kadın Etek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/mom-jeans-p05085989.html" target="_blank" rel="noopener">Mom Jeans</a></td>
+          <td><code>BSK-05085989</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>465.88</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/nervur-detayli-tayt-p03821128.html" target="_blank" rel="noopener">Nervür Detaylı Tayt</a></td>
+          <td><code>ZR-3821128</code></td>
+          <td>Kadın Taytlar</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>327.16</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/normal-bel-cep-detayli-pileli-genis-paca-pantolon-kahve-4112704-1/" target="_blank" rel="noopener">Normal Bel Cep Detaylı Pileli Geniş Paça Pantolon</a></td>
+          <td><code>8684847276785</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1499.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/oversize-baskili-tisort-p05013630.html" target="_blank" rel="noopener">Oversize Baskılı Tişört</a></td>
+          <td><code>BSK-05013630</code></td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>375.88</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/oversize-blazer-v8428az23au" target="_blank" rel="noopener">Oversize Blazer</a></td>
+          <td><code>DF-V8428AZ23AU</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>757.37</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/oversize-denim-ceket-kadin-s44267" target="_blank" rel="noopener">Oversize Denim Ceket</a></td>
+          <td><code>LCW-S44267</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>590.35</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/oversize-kapusonly-sweatshirt-kadin-s41987" target="_blank" rel="noopener">Oversize Kapüşonlu Sweatshirt</a></td>
+          <td><code>LCW-S41987</code></td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>265.06</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/oversize-kapusonly-sweatshirt-v6682az23au" target="_blank" rel="noopener">Oversize Kapüşonlu Sweatshirt</a></td>
+          <td><code>DF-V6682AZ23AU</code></td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>529.19</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-cepli-pileli-floral-dokulu-nakis-detayli-brodeli-midi-etek-ekru-4117806-1/" target="_blank" rel="noopener">Pamuklu Cepli Pileli Floral Dokulu Nakış Detaylı Brodeli Midi Etek</a></td>
+          <td><code>8684847581582</code></td>
+          <td>Kadın Etek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1999.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-cepli-yuksek-bel-duz-genis-paca-brodeli-pantolon-ekru-4108441/" target="_blank" rel="noopener">Pamuklu Cepli Yüksek Bel Düz Geniş Paça Brodeli Pantolon</a></td>
+          <td><code>8684847020890</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1999.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-genis-uzun-kollu-dugmeli-muslin-gomlek-ekru-4115016-1/" target="_blank" rel="noopener">Pamuklu Geniş Uzun Kollu Düğmeli Müslin Gömlek</a></td>
+          <td><code>8684847434970</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-kisa-kollu-dantel-detayli-brodeli-cicekli-gomlek-ekru-4117803-1/" target="_blank" rel="noopener">Pamuklu Kısa Kollu Dantel Detaylı Brodeli Çiçekli Gömlek</a></td>
+          <td><code>8684847579299</code></td>
+          <td>Kadın Gömlek</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1499.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-uzun-kollu-kruvaze-baglama-detayli-brodeli-kimono-ceket-ekru-4117801-2/" target="_blank" rel="noopener">Pamuklu Uzun Kollu Kruvaze Bağlama Detaylı Brodeli Kimono Ceket</a></td>
+          <td><code>8684847578124</code></td>
+          <td>Kimonos</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1699.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/pamuklu-yuvarlak-yaka-yanlari-baglamali-fiyonklu-kolsuz-muslin-bluz-ekru-4115004-1/" target="_blank" rel="noopener">Pamuklu Yuvarlak Yaka Yanları Bağlamalı Fiyonklu Kolsuz Müslin Bluz</a></td>
+          <td><code>8684847428825</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>999.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/patli-uzun-hirka-kadin-s44512" target="_blank" rel="noopener">Patlı Uzun Hırka</a></td>
+          <td><code>LCW-S44512</code></td>
+          <td>Kadın Hırkalar</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>451.32</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/regular-fit-jean-pantolon-kadin-s42876" target="_blank" rel="noopener">Regular Fit Jean Pantolon</a></td>
+          <td><code>LCW-S42876</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>274.05</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/regular-fit-jean-pantolon-b5980ax23au" target="_blank" rel="noopener">Regular Fit Jean Pantolon</a></td>
+          <td><code>DF-B5980AX23AU</code></td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>311.33</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/ribanali-crop-tisort-p04512628.html" target="_blank" rel="noopener">Ribanalı Crop Tişört</a></td>
+          <td><code>ZR-4512628</code></td>
+          <td>Kadın Üstler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>298.33</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/saten-midi-etek-p05589310.html" target="_blank" rel="noopener">Saten Midi Etek</a></td>
+          <td><code>MD-5589310</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1781.41</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/slim-fit-boru-paca-pantolon-p05040530.html" target="_blank" rel="noopener">Slim Fit Boru Paça Pantolon</a></td>
+          <td><code>BSK-05040530</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>581.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/slim-fit-yuksek-bel-pantolon-kadin-s43112" target="_blank" rel="noopener">Slim Fit Yüksek Bel Pantolon</a></td>
+          <td><code>LCW-S43112</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>297.87</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/slim-fit-yuksek-bel-pantolon-p05575810.html" target="_blank" rel="noopener">Slim Fit Yüksek Bel Pantolon</a></td>
+          <td><code>MD-5575810</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1812.59</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/slim-fit-yuksek-bel-pantolon-b2030ax24au" target="_blank" rel="noopener">Slim Fit Yüksek Bel Pantolon</a></td>
+          <td><code>DF-B2030AX24AU</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>530.09</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/soft-touch-cropped-triko-p07756028.html" target="_blank" rel="noopener">Soft Touch Cropped Triko</a></td>
+          <td><code>ZR-7756028</code></td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>585.52</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/straight-leg-pantolon-p05551410.html" target="_blank" rel="noopener">Straight Leg Pantolon</a></td>
+          <td><code>MD-5551410</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1539.97</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/trencot-kisa-ceket-p09035228.html" target="_blank" rel="noopener">Trençkot Kısa Ceket</a></td>
+          <td><code>ZR-9035228</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1886.72</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/v-yaka-midi-elbise-p05593410.html" target="_blank" rel="noopener">V Yaka Midi Elbise</a></td>
+          <td><code>MD-5593410</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>2379.87</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/vatkali-blazer-ceket-kadin-s42134" target="_blank" rel="noopener">Vatkalı Blazer Ceket</a></td>
+          <td><code>LCW-S42134</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>496.64</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/vatkali-bomber-ceket-p09023389.html" target="_blank" rel="noopener">Vatkalı Bomber Ceket</a></td>
+          <td><code>BSK-09023389</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>679.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/vatkal-ispanyol-kesim-bluz-p06006298.html" target="_blank" rel="noopener">Vatkalı İspanyol Kesim Bluz</a></td>
+          <td><code>ZR-6006298</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>823.84</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/viskon-karisimli-kolsuz-baglama-detayli-dokulu-halter-yaka-bluz-kahve-4110998-1/" target="_blank" rel="noopener">Viskon Karışımlı Kolsuz Bağlama Detaylı Dokulu Halter Yaka Bluz</a></td>
+          <td><code>8684847196687</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>799.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/viskon-karisimli-kolsuz-baglama-detayli-dokulu-halter-yaka-bluz-haki-4110997/" target="_blank" rel="noopener">Viskon Karışımlı Kolsuz Bağlama Detaylı Dokulu Halter Yaka Bluz</a></td>
+          <td><code>8684847196755</code></td>
+          <td>Tanktops</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>899.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/viskon-kumas-cepli-beli-lastikli-duz-bol-paca-pantolon-kahve-4110967/" target="_blank" rel="noopener">Viskon Kumaş Cepli Beli Lastikli Düz Bol Paça Pantolon</a></td>
+          <td><code>8684847189764</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:34</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/viskon-kumas-cepli-beli-lastikli-duz-bol-paca-pantolon-haki-4110968/" target="_blank" rel="noopener">Viskon Kumaş Cepli Beli Lastikli Düz Bol Paça Pantolon</a></td>
+          <td><code>8684847189894</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/viskon-kupro-kumas-bol-kesim-duz-bol-paca-pantolon-tas-4093072-1/" target="_blank" rel="noopener">Viskon Kupro Kumaş Bol Kesim Düz Bol Paça Pantolon</a></td>
+          <td><code>8684846162942</code></td>
+          <td>Kadın Pantolon</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1299.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/yapisal-blazer-ceket-p02006110.html" target="_blank" rel="noopener">Yapısal Blazer Ceket</a></td>
+          <td><code>ZR-2006110</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1376.02</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/yapisal-omuzlu-blazer-p05512310.html" target="_blank" rel="noopener">Yapısal Omuzlu Blazer</a></td>
+          <td><code>MD-5512310</code></td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>3101.22</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/yazlik-maxi-etek-p09038589.html" target="_blank" rel="noopener">Yazlık Maxi Etek</a></td>
+          <td><code>BSK-09038589</code></td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>641.19</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.koton.com/yuvarlak-dokumlu-yaka-kolsuz-cicek-aksesuarli-bluz-kahve-4112706/" target="_blank" rel="noopener">Yuvarlak Dökümlü Yaka Kolsuz Çiçek Aksesuarlı Bluz</a></td>
+          <td><code>8684847280621</code></td>
+          <td>Blouse Ss</td>
+          <td><span class="store-tag t-koton">Koton</span></td>
+          <td>1199.99</td>
+          <td>2026-04-29 15:41:35</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/yuksek-bel-cargo-pantolon-p05088683.html" target="_blank" rel="noopener">Yüksek Bel Cargo Pantolon</a></td>
+          <td><code>BSK-05088683</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>439.44</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.zara.com/tr/tr/yuksek-bel-dokumlu-pantolon-p03039228.html" target="_blank" rel="noopener">Yüksek Bel Dökümlü Pantolon</a></td>
+          <td><code>ZR-3039228</code></td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-zara">Zara</span> <span class="store-tag t-sim">sim</span></td>
+          <td>769.78</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/yun-karisimli-overcoat-p05532510.html" target="_blank" rel="noopener">Yün Karışımlı Overcoat</a></td>
+          <td><code>MD-5532510</code></td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>4759.02</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.defacto.com.tr/urun/cicek-baskili-viskon-bluz-a6316ax24sp" target="_blank" rel="noopener">Çiçek Baskılı Viskon Bluz</a></td>
+          <td><code>DF-A6316AX24SP</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-defacto">DeFacto</span> <span class="store-tag t-sim">sim</span></td>
+          <td>358.02</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.bershka.com/tr/ciekli-mini-elbise-p09105880.html" target="_blank" rel="noopener">Çiçekli Mini Elbise</a></td>
+          <td><code>BSK-09105880</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-bershka">Bershka</span> <span class="store-tag t-sim">sim</span></td>
+          <td>658.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.lcw.com/ciecekli-yazlik-elbise-kadin-s44023" target="_blank" rel="noopener">Çiçekli Yazlık Elbise</a></td>
+          <td><code>LCW-S44023</code></td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-lcw">LC Waikiki</span></td>
+          <td>309.31</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td><a href="https://www.massimodutti.com/tr/ipek-karisimli-bluz-p05589510.html" target="_blank" rel="noopener">İpek Karışımlı Bluz</a></td>
+          <td><code>MD-5589510</code></td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-md">Massimo Dutti</span> <span class="store-tag t-sim">sim</span></td>
+          <td>1770.97</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div class="sec">
+    <h2>&#128200; Son 7 Günlük Fiyat Geçmişi</h2>
+    <table>
+      <thead><tr><th>Ürün</th><th>Kategori</th><th>Marka</th><th>Fiyat (₺)</th><th>Tarih</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Regular Fit Jean Pantolon</td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>311.33</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Dökümlü Midi Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>593.78</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Oversize Blazer</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>757.37</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Keten Görünümlü Gömlek</td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>282.85</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Fitilli Kadife Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>572.39</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Geniş Paça Yüksek Bel Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>607.91</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Crop Triko Kazak</td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>360.42</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Bağcıklı Jogger Eşofman Altı</td>
+          <td>Kadın Eşofman</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>294.65</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Çiçek Baskılı Viskon Bluz</td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>358.02</td>
+          <td>2026-04-29 15:41:52</td>
+        </tr>
+        
+        <tr>
+          <td>Basic Pamuk Tişört</td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>246.00</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>530.09</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td>Oversize Kapüşonlu Sweatshirt</td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>529.19</td>
+          <td>2026-04-29 15:41:51</td>
+        </tr>
+        
+        <tr>
+          <td>İpek Karışımlı Bluz</td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1770.97</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Yün Karışımlı Overcoat</td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>4759.02</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1812.59</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>V Yaka Midi Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2379.87</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Yapısal Omuzlu Blazer</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>3101.22</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Merino Yün Kazak</td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2221.35</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Baskılı İpek Bluz</td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>2269.34</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Straight Leg Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1539.97</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Saten Midi Etek</td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1781.41</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Ekose Uzun Palto</td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>6617.22</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Keten Karışımlı Gömlek</td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1308.53</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Bel Kemerli Trençkot</td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>4373.42</td>
+          <td>2026-04-29 15:41:48</td>
+        </tr>
+        
+        <tr>
+          <td>Oversize Baskılı Tişört</td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>375.88</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Yüksek Bel Cargo Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>439.44</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Dökümlü Saten Bluz</td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>472.35</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Slim Fit Boru Paça Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>581.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Fırfırlı Midi Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>545.62</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Crop Blazer</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>655.00</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Çiçekli Mini Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>658.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Mom Jeans</td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>465.88</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Kayık Yaka Crop Kazak</td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>378.47</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Yazlık Maxi Etek</td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>641.19</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Keten Karışımlı Gömlek</td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>418.35</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Vatkalı Bomber Ceket</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>679.80</td>
+          <td>2026-04-29 15:41:45</td>
+        </tr>
+        
+        <tr>
+          <td>Bel Detaylı Maxi Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1039.91</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td>Trençkot Kısa Ceket</td>
+          <td>Kadın Dış Giyim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1886.72</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td>Nervür Detaylı Tayt</td>
+          <td>Kadın Taytlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>327.16</td>
+          <td>2026-04-29 15:41:42</td>
+        </tr>
+        
+        <tr>
+          <td>Vatkalı İspanyol Kesim Bluz</td>
+          <td>Kadın Bluzlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>823.84</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Yüksek Bel Dökümlü Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>769.78</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Keten Karışımlı Oversize Gömlek</td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>548.43</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Midi Dökümlü Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1135.63</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Soft Touch Cropped Triko</td>
+          <td>Kadın Trikolar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>585.52</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Geniş Paça Denim Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>696.37</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Bağlama Detaylı Mini Etek</td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>628.78</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Yapısal Blazer Ceket</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>1376.02</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Ribanalı Crop Tişört</td>
+          <td>Kadın Üstler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>298.33</td>
+          <td>2026-04-29 15:41:41</td>
+        </tr>
+        
+        <tr>
+          <td>Basic Pamuk Tişört</td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>148.88</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Slim Fit Yüksek Bel Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>297.87</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Oversize Kapüşonlu Sweatshirt</td>
+          <td>Kadın Sweatshirt</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>265.06</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Çiçekli Yazlık Elbise</td>
+          <td>Kadın Elbiseler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>309.31</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Regular Fit Jean Pantolon</td>
+          <td>Kadın Denim</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>274.05</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Keten Görünümlü Gömlek</td>
+          <td>Kadın Gömlekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>198.46</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Bel Lastikli Etek</td>
+          <td>Kadın Etekler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>146.39</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Patlı Uzun Hırka</td>
+          <td>Kadın Hırkalar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>451.32</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Vatkalı Blazer Ceket</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>496.64</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Fitilli Kadife Pantolon</td>
+          <td>Kadın Pantolonlar</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>225.29</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Crop Ribana Tişört</td>
+          <td>Kadın Tişörtler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>102.25</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+        <tr>
+          <td>Oversize Denim Ceket</td>
+          <td>Kadın Ceketler</td>
+          <td><span class="store-tag t-sim">?</span></td>
+          <td>590.35</td>
+          <td>2026-04-29 15:41:38</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+    <p style="color:#aaa;font-size:.78em;margin-top:8px">
+      Toplam 168 kayıt; ilk 60 gösteriliyor.
+    </p>
+    
+  </div>
+  
+
+  <footer>RakipRadar &mdash; Kıyafet Sektörü Fiyat İzleme &mdash; 2026-04-29 15:42:02</footer>
+</div>
+</body>
+</html>
